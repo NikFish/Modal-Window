@@ -18,3 +18,8 @@ for (let i = 0; i < btnsShowModalWindow.length; i++) {
 }
 btnCloseModal.addEventListener('click', addHiddenClass);
 overlay.addEventListener('click', addHiddenClass);
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape' && !modalWindow.classList.contains('hidden'))
+    addHiddenClass();
+});
