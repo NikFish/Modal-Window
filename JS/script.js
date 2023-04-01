@@ -15,6 +15,6 @@ const showModalWindow = function () {
 
 for (let i = 0; i < btnsShowModalWindow.length; i++) {
   btnsShowModalWindow[i].addEventListener('click', showModalWindow);
-  btnCloseModal.addEventListener('click', addHiddenClass);
-  overlay.addEventListener('click', addHiddenClass);
 }
+btnCloseModal.addEventListener('click', addHiddenClass);
+overlay.addEventListener('click', addHiddenClass);
